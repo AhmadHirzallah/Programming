@@ -1,0 +1,76 @@
+   - Desktop/
+- cmd: cd Programming-Exercises-and-Projects/
+  when: 1725272603
+  paths:
+    - Programming-Exercises-and-Projects/
+- cmd: git commit -m "Inital commit"
+  when: 1725272639
+- cmd: git branch -M main
+  when: 1725272651
+- cmd: git status
+  when: 1725272816
+- cmd: git remote add origin https://github.com/AhmadHirzallah/Programming.git
+  when: 1725272876
+- cmd: rm -rf .git
+  when: 1725272971
+  paths:
+    - .git
+- cmd: git init
+  when: 1725272975
+- cmd: git add *
+  when: 1725272978
+- cmd: git branch -M main\n
+  when: 1725272983
+- cmd: git commit -m "first commit"
+  when: 1725272987
+- cmd: git remote add origin git@github.com:AhmadHirzallah/Programming.git
+  when: 1725272991
+- cmd: git push -u origin main
+  when: 1725272996
+- cmd: cd ~/.ssh/
+  when: 1725273045
+  paths:
+    - ~/.ssh/
+- cmd: ls -a
+  when: 1725273061
+- cmd: cd /
+  when: 1725273077
+  paths:
+    - /
+- cmd: cd home/
+  when: 1725273079
+  paths:
+    - home/
+- cmd: cd .ssh
+  when: 1725273084
+- cmd: cd ahirzall/.ssh/
+  when: 1725273096
+  paths:
+    - ahirzall/.ssh/
+- cmd: ls
+  when: 1725273097
+- cmd: car id_rsa.pub
+  when: 1725273104
+  paths:
+    - id_rsa.pub
+- cmd: cat id_rsa.pub
+  when: 1725273109
+  paths:
+    - id_rsa.pub
+- cmd: ssh-keygen
+  when: 1725273117
+- cmd: ls
+  when: 1725273138
+- cmd: cat github.pub
+  when: 1725273145
+  paths:
+    - github.pub
+- cmd: cd
+  when: 1725273172
+- cmd: cd Desktop/Programming-Exercises-and-Projects/
+  when: 1725273190
+  paths:
+    - Desktop/Programming-Exercises-and-Projects/
+- cmd: ls
+  when: 1725273190
+- cmd: git push -u origin main
