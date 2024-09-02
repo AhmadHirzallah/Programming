@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void    *ft_malloc(int i_number_of_elements, int i_element_size);
+
+int	main(int argc, char **argv)
+{
+	int	*p_i_atm_pin;
+	short *p_result;
+	char *p_str_atm_pin;
+
+//	p_i_atm_pin = (int *)ft_malloc(1, sizeof(int));
+	p_str_atm_pin = (char *)ft_malloc(10, sizeof(char));
+	if (!p_str_atm_pin)
+		return (1);
+	p_str_atm_pin = argv[1];
+
+	return (0);
+}
+
+short	*ft_p_check_pin(char *p_str_atm_pin)
+{
+	if (*p_str_atm_pin == "1234")
+		*p_result = 1;
+	else
+		*p_result = 0;
+	return (p_result);
+
+}
+
+void    *ft_malloc(int i_number_of_elements, int i_element_size)
+{
+    void    *p_v;
+
+    p_v = (void *)malloc(i_number_of_elements * i_element_size);
+    if (!p_v)
+    {
+        printf("Unfortunatelly; Memory allocation failed.\n");
+        return (NULL);
+    }
+    return (p_v);
+}
+
+
